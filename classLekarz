@@ -1,0 +1,15 @@
+public class Lekarz extends Pracownik{
+    private int premia;
+
+    public Lekarz(String imie, String nazwisko, double wypłata){
+        super(imie, nazwisko, wypłata);
+        premia = 0;
+    }
+
+    public int getPremia(){
+        return premia;
+    }
+    public void setPremia(int p){
+    premia = p;
+    }
+}
