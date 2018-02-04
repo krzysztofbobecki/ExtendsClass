@@ -10,6 +10,6 @@ public class Lekarz extends Pracownik{
         return premia;
     }
     public void setPremia(int p){
-    premia = p;
+    premia += p;
     }
 }
