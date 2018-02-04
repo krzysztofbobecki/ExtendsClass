@@ -1,0 +1,23 @@
+public class Pracownik {
+    private String imie;
+    private String nazwisko;
+    private double wypłata;
+
+    public Pracownik(String imie, String n, double w){
+        this.imie = imie;
+        this.nazwisko = n;
+        this.wypłata = w;
+    }
+
+    String getImie(){
+        return imie;
+    }
+    String getNazwisko(){
+        return nazwisko;
+    }
+    double getWypłata(){
+        return wypłata;
+    }
+}
+
+
