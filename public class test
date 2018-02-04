@@ -1,0 +1,20 @@
+import java.lang.NullPointerException;
+
+public class test {
+    public static void main(String[] args) throws NullPointerException{
+        Pracownik pracownik = new Pracownik("Jan","Palok",4322);
+        Pracownik pracownik1 = new Pracownik("Adam","Palok",4344);
+
+        System.out.println("Pracownik 1: "+pracownik.getImie()+" "+pracownik.getNazwisko()+" "+pracownik.getWypłata()+"zł.");
+        System.out.println("Pracownik 2: "+pracownik1.getImie()+" "+pracownik1.getNazwisko()+" "+pracownik1.getWypłata()+"zł.");
+
+        Lekarz lekarz = new Lekarz("Robson","Waldifieme", 5000);
+        lekarz.setPremia(1000);
+        Pielęgniarka pielęgniarka = new Pielęgniarka("Ania", "Sandacz", 3423);
+        pielęgniarka.setNadgodziny(4);
+
+        System.out.println("Lekarz: "+lekarz.getImie()+" "+lekarz.getNazwisko()+" "+lekarz.getWypłata()+"zł"+lekarz.getPremia()+"zł.");
+        System.out.println("Pielęgniarka: "+pielęgniarka.getImie()+" "+pielęgniarka.getNazwisko()+" "+pielęgniarka.getWypłata()+"zł"+pielęgniarka.getNadgodziny()+"godz.");
+
+    }
+}
